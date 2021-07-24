@@ -1,10 +1,10 @@
-package com.eventos.mvc;
+package com.autor.mvc;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EventoApplicationTests {
+class AutorApplicationTests {
 
 	@Test
 	void contextLoads() {
