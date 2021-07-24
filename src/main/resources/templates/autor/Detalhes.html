@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lista de Eventos</title>
+</head>
+
+<body>
+    <div th:replace="~{Nav :: nav}"></div>
+    <div class="container">
+        <h1>Detalhes do evento</h1>
+
+        <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Autor</span>
+                        <p>
+                            <strong>Id: </strong><span th:text="${autor.id}"></span>
+                        </p>
+                        <p>
+                            <strong>Nome: </strong><span th:text="${autor.nome}"></span>
+                        </p>
+                        <p>
+                            <strong>Email: </strong><span th:text="${autor.email}"></span>
+                        </p>
+                        <p>
+                            <strong>Pais: </strong><span th:text="${autor.pais}"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div th:replace="~{Footer :: footer}"></div>
+    <script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
+</body>
+
+</html>
